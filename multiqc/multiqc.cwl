@@ -60,9 +60,6 @@ baseCommand: ["multiqc"]
 arguments:
   - valueFrom: --zip-data-dir
     position: 1
-  - valueFrom: "'log_filesize_limit: 100000000'"
-    position: 1
-    prefix: --cl_config
   - valueFrom: $(runtime.outdir)
     position: 2
     prefix: --outdir
